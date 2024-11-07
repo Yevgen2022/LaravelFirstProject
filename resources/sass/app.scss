@@ -1,0 +1,8 @@
+// Імпорт шрифтів
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Імпорт змінних (якщо у вас є файл variables.scss)
+@import 'variables';
+
+// Імпорт Bootstrap стилів
+@import '~bootstrap/scss/bootstrap'; // Зверніть увагу на ~, який вказує на корінь node_modules

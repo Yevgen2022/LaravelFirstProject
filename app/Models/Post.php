@@ -10,8 +10,8 @@ class Post extends Model
 {
     use HasFactory;
     use SoftDeletes;
-    protected $guerded = false;
-    
+  //  protected $guerded = false;
+
     protected $table = 'posts';
     protected $guarded = [];
 

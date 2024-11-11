@@ -1,8 +1,10 @@
 <?php
 
-//namespace App\Service\Post;
+namespace App\Services\Post;
 
-use App\Service\Post;
+//use App\Services\Post;
+use App\Models\Post;
+
 
 class Service
 {

@@ -7,7 +7,7 @@ use App\Models\Post;
 
 use App\Http\Requests\Post\StoreRequest;
 
-class StoreController extends Controller
+class StoreController extends BaseController
 {
 
     public function __invoke(StoreRequest $request)
@@ -15,19 +15,12 @@ class StoreController extends Controller
 
         $data = $request->validated();
 
-         /* $data = request()->validate([
-            'title' => 'required | string',        
-            'content' => 'required | string',              
-            'image' => 'required | string ',               
-            'category_id' => '',
-            'tags' => '',
-        ]);
- */ 
-        $tags = $data['tags'];
-        unset($data['tags']);
+        $this->service->store($data);
 
+        /* $tags = $data['tags'];
+        unset($data['tags']);
         $post = Post::create($data);
-        $post->tags()->attach($tags);
+        $post->tags()->attach($tags); */
 
         return redirect()->route('post.index');
     }

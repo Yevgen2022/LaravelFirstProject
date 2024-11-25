@@ -14,7 +14,10 @@
         @endforeach
 
         <div class="mt-3">
-            {{ $posts-> links()}}
+{{--            {{ $posts-> links()}}--}}
+
+{{--            FOR pagination after filter--}}
+            {{$posts->withQueryString()->links()}}
         </div>
     </div>
 

@@ -28,9 +28,7 @@ A beginner-friendly **Laravel-based application** built as part of a training co
 
 ---
 
-##  Folder Structure Highlights
-
-## 📁 Folder Structure Highlights
+## Folder Structure Highlights
 
 ```text
 app/
@@ -46,7 +44,7 @@ resources/
 database/
 ├── migrations/          → DB schema
 └── seeders/             → Test data
-
+```
 
 ---
 

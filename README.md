@@ -30,22 +30,6 @@ A beginner-friendly **Laravel-based application** built as part of a training co
 
 ##  Folder Structure Highlights
 
-
-app/
-├── Http/
-│ ├── Controllers/ → Route logic
-│ └── Middleware/ → (optional, not shown)
-├── Models/ → Eloquent models
-
-resources/
-├── views/ → Blade templates
-├── js/ & sass/ → Frontend (optional)
-
-database/
-├── migrations/ → DB schema
-└── seeders/ → Test data
-
-
 ---
 
 ##  Learning Objectives
